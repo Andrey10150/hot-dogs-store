@@ -1,0 +1,5 @@
+.hotdogItems {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -9,7 +9,7 @@ const Modal = ({ onClose, open, fetchData }) => {
   const [image, setImage] = useState('')
 
   const handleSubmit = () => {
-    axios.post('https://intense-ocean-79745.herokuapp.com/api/hotdogs', {
+    axios.post('https://hot-dogs-store.herokuapp.com/api/hotdogs', {
       name,
       price,
       description,

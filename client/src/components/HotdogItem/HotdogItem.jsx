@@ -14,7 +14,7 @@ const HotdogItem = ({ hotdog, fetchData }) => {
   }
 
   const handleDelete = () => {
-    axios.delete(`https://intense-ocean-79745.herokuapp.com/api/hotdogs/${hotdog.id}`).then(() => {
+    axios.delete(`https://hot-dogs-store.herokuapp.com/api/hotdogs/${hotdog.id}`).then(() => {
       fetchData()
     })
   }
@@ -22,7 +22,7 @@ const HotdogItem = ({ hotdog, fetchData }) => {
   const handleUpgrade = () => {
     if (name && image) {
       axios
-        .put(`https://intense-ocean-79745.herokuapp.com/api/hotdogs/${hotdog.id}`, {
+        .put(`https://hot-dogs-store.herokuapp.com/api/hotdogs/${hotdog.id}`, {
           name,
           price,
           description,

@@ -9,7 +9,7 @@ function App() {
   const [hotdogs, setHotdogs] = useState([])
 
   const fetchData = () => {
-    axios('https://hot-dogs-store.herokuapp.com//api/hotdogs')
+    axios('https://hot-dogs-store.herokuapp.com/api/hotdogs')
       .then(data => setHotdogs(data.data))
       .catch(err => console.log(err.message))
   }
